@@ -13,7 +13,6 @@ const DayWrapper = styled.div`
   margin: 5px;
   box-sizing: border-box;
   border-radius: 10px;
-  border: 1px solid black;
   background-color: rgba(0.3, 0.3, 0.3, 0.5);
 `;
 
@@ -25,7 +24,9 @@ const LineWrapper = styled.div`
   p {
     color: #fff;
     font-weight: 900;
-    text-shadow: #000 0 0 5px;
+  }
+  p:first-of-type {
+    font-style: italic;
   }
 `;
 
@@ -62,6 +63,7 @@ const Button = styled.button`
   margin: 5px;
   border-radius: 10px;
   cursor: pointer;
+  -webkit-appearance: none;
   :focus {
     outline: none;
   }
