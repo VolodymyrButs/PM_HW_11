@@ -34,7 +34,7 @@ const App = () => {
   useEffect(
     () =>
       fetch(
-        "https://cors-anywhere.herokuapp.com/http://api.weatherunlocked.com/api/forecast/50.27,30.31?app_id=231e22db&app_key=992c0bfbce0848660ff960fc64beea9c"
+        "http://api.weatherunlocked.com/api/forecast/50.27,30.31?app_id=231e22db&app_key=992c0bfbce0848660ff960fc64beea9c"
       )
         .then((response) => response.json())
         .then((data) => setWeaather(data.Days)),
